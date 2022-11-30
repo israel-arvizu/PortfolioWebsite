@@ -1,0 +1,76 @@
+body{
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+/* font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4% 5%;
+    padding-bottom: 0px;
+    font-size: 20px;
+}
+
+#left-logo-sect > a{
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+#left-logo-sect > a > span{
+    color: #bb6d00;
+}
+
+#right-nav-buttons-cont > a{
+    font-size: 16px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    color: #808080;
+    /* transition: border 2s ease-in; */
+}
+
+#right-nav-buttons-cont > a:hover{
+    color: black;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/* MAIN LANDING PAGE - SECTION 1 */
+
+#main-landing-section-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header-text{
+    margin-left: 5%;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    margin-bottom: 15px;
+}
+
+.main-header-text > h1:first-child{
+    font-size: 25vh;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.main-header-text > h1:last-child{
+    font-size: 10vh;
+    font-weight: 600;
+    margin: 0px;
+}
+
+#subtext-landing{
+    margin-top: 15px;
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: 300;
+    color: #808080;
+    max-width: 500px;
+    line-height: 32px;
+}
