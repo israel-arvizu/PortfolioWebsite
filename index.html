@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/kzb0dtg.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -27,11 +28,11 @@
         <section id="main-landing-section-1">
             <div class="wrapper-container-75">
                 <div class="main-header-text">
-                    <h1>Hi,</h1>
-                    <h1>I'm Israel Arvizu</h1>
+                    <h1 data-aos="fade-up" data-aos-duration="700">Hi,</h1>
+                    <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">I'm Israel Arvizu</h1>
                 </div>
                 <div id="subtext-landing">
-                    <p>
+                    <p data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1200" >
                         👋 A Junior Developer with a passion for innovating - Looking for the right company to benefit the both of us!
                     </p>
                 </div>
@@ -43,17 +44,23 @@
         <section id="main-landing-section-2">
             <div class="main-wrapper sect-2">
                 <div>
-                    <h2>Who am I?</h2>
-                    <p>A tech enthusiast who has a love for innovating and creating solutions to all problems that arise in my journey, my love for problem-solving is what drives my passion for development and is what makes my result-driven attitude unparalleled.
-                        With over 3 years of experience in client services, business development, finance, and web development. My comprehensive skill set will be able to bring a unique perspective into any environment and produce stunning results quickly and efficiently. Possessing the ability to work effectively in a team and individually, while constantly adapting to evolving work environments, is what makes me a great fit for any company.
-                        On the other hand, I also love to travel on my free time and connect with people. Humans are made for interaction and I believe kindness is the best medicine!
-                        Are you looking to hire? Check out my resume</p>
+                    <h2>Who am I<span>?</span></h2>
+                    <p>&ensp;A tech enthusiast who has a love for innovating and creating solutions to all problems that arise in my journey, my love for problem-solving is what drives my passion for development and is what makes my result-driven attitude unparalleled.
+                        <br><br>With over 3 years of experience in client services, business development, finance, and web development. My comprehensive skill set will be able to bring a unique perspective into any environment and produce stunning results quickly and efficiently. Possessing the ability to work effectively in a team and individually, while constantly adapting to evolving work environments, is what makes me a great fit for any company.
+                        <br><br>On the other hand, I also love to travel on my free time and connect with people. Humans are made for interaction and I believe kindness is the best medicine!
+                        <br><br>Are you looking to hire? Check out my resume</p>
                 </div>
                 <div>
-                    <img src="images/IsraelPicOne.png">
+                    <img src="images/aboutUs-1.JPG" class="first-pic-about top-pic" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="250">
+                    <img src="/images/wildISraels.jpg" class="first-pic-about mid-pic" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="250">
+                    <img src="images/IsraelPicOne.png" class="first-pic-about bottom-pic" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
                 </div>
             </div>
         </section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -1,6 +1,13 @@
 :root{
     --textGray: #808080;
     --mainOrange: #e69c36;
+    --professionalGray: #333333;
+    --europaFont: europa, sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -102,7 +109,7 @@ nav{
     border-radius: 25px;
     padding: 10px 15px;
     border: 1px solid;
-    font-family: europa, sans-serif;
+    font-family: var(--europaFont);
     font-weight: 500;
     font-size: 15px;
     border-color: var(--mainOrange);
@@ -146,6 +153,8 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 15px 35px;
+    font-family: var(--europaFont)
 }
 
 .main-wrapper.sect-2 > div:last-child{
@@ -153,4 +162,53 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.main-wrapper.sect-2 > div > h2{
+    width: 100%;
+    max-width: 700px;
+    font-size: 45px;
+    margin-bottom: 5px;
+    color: var(--professionalGray);
+}
+
+.main-wrapper.sect-2 > div > h2 > span{
+    color: var(--mainOrange);
+}
+
+.main-wrapper.sect-2 > div > p{
+    width: 100%;
+    max-width: 700px;
+    font-size: 18px;
+}
+
+.first-pic-about{
+    object-fit: cover;
+    border: 3px solid var(--mainOrange);
+    border-radius: 50%;
+    /* transition: margin 700ms; */
+}
+
+.first-pic-about.top-pic{
+    width: 150px;
+    height: 150px;
+    margin-right: 330px;
+    margin-bottom: -215px;
+    max-width: 175px;
+    max-height: 175px;
+    z-index: 1;
+}
+
+.first-pic-about.mid-pic{
+    margin-bottom: -125px;
+    margin-left: 375px;
+    width: 200px;
+    z-index: 1;
+}
+
+.first-pic-about.bottom-pic{
+    width: 350px;
+    height: 350px;
+    max-width: 600px;
+    max-height: 600px;
 }
