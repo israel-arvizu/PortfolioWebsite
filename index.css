@@ -176,10 +176,20 @@ nav{
     color: var(--mainOrange);
 }
 
-.main-wrapper.sect-2 > div > p{
+.main-paragraph-styles{
     width: 100%;
     max-width: 700px;
     font-size: 18px;
+}
+
+.main-paragraph-styles > span > a{
+    color: var(--mainOrange);
+    text-decoration: none;
+}
+
+.main-paragraph-styles > span > a:hover{
+    color: var(--mainOrange);
+    text-decoration:underline
 }
 
 .first-pic-about{
@@ -211,4 +221,20 @@ nav{
     height: 350px;
     max-width: 600px;
     max-height: 600px;
+}
+
+.project-sect-wrapper{
+    width: 100%;
+    height: fit-content;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    color: var(--professionalGray)
+
+}
+
+.project-sect-wrapper > h2{
+    margin: 25px 0px;
+    font-size: 55px;
+    text-align: center;
 }
