@@ -294,6 +294,43 @@ article > div >  a > img{
     font-size: 18px;
 }
 
+.prj-btn-container{
+    margin-top: 15px;
+}
+
+.prj-btn-container > a{
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.prj-btn-container > a:hover{
+    cursor: pointer;
+    background-color: var(--mainOrange);
+    color: white;
+}
+
+.prj-btn-container > a:first-child{
+    border: 1px solid var(--mainOrange);
+    color: var(--mainOrange);
+}
+
+.prj-btn-container > a:first-child:hover{
+    background-color: var(--mainOrange);
+    color: white;
+}
+
+.prj-btn-container > a:last-child:hover{
+    background-color: #88d0dd;
+    color: white;
+}
+
+.prj-btn-container > a:last-child{
+    border: 1px solid #88d0dd;
+    color: #88d0dd;
+}
+
 .prj-odd > div:first-child > a{
     width: 65%;
     background-color: #a3ced6;
