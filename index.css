@@ -363,7 +363,7 @@ article > div >  a > img{
 .education-sect-wrapper{
     width: 100%;
     height: fit-content;
-    margin: 50px 0px;
+    margin: 150px 0px;
 }
 
 .education-sect-wrapper > h2{
@@ -373,9 +373,10 @@ article > div >  a > img{
 }
 
 #education-item-list{
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
 }
 
@@ -386,11 +387,13 @@ article > div >  a > img{
     align-items: center;
     width: 30%;
     height: fit-content;
+    margin-right: 15px;
 }
 
 #education-item-list > div > img{
-    width: 30%;
+    width: 20%;
     max-width: 120px;
+    min-width: 80px;
     object-fit: cover;
 }
 
@@ -402,4 +405,32 @@ article > div >  a > img{
 .edu-info-text > h3{
     white-space: nowrap;
     margin: 0px;
+}
+
+.edu-info-text > p{
+    margin-top: 5px;
+}
+
+/* WORK EXPERIENCE */
+
+.work-sect-wrapper{
+    width: 100%;
+    height: fit-content;
+    margin: 150px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-sect-wrapper > h2{
+    font-size: 55px;
+    text-align: center;
+    color: var(--professionalGray);
+}
+
+grid{
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 1em;
 }
