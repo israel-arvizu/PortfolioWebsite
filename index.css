@@ -441,7 +441,7 @@ grid > div{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    /* background-color: #eef1f5; */
+    /* background-color:  */
     border-radius: 100px 15px 15px 100px;
 }
 
@@ -459,4 +459,58 @@ grid > div > img{
     white-space: nowrap;
     width: fit-content;
     font-size: 20px;
+    margin-bottom: 2.5px;
+}
+
+.work-text-cont > p {
+    margin-top: 2.5px;
+}
+
+/*TECHNICAL SKILLS CAROUSEL */
+
+#main-section-5{
+    width: 100%;
+    height: fit-content;
+}
+
+.skills-sect-wrapper{
+    width: 100%;
+    height: fit-content;
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-sect-wrapper > h2{
+    font-size: 55px;
+    text-align: center;
+    color: var(--professionalGray);
+}
+
+.skills-icon-container{
+    display: flex;
+    overflow-x: hidden;
+    max-width: 1154px;
+}
+
+.skills-icon-wrapper{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 122px;
+    grid-gap: 50px;
+    position: relative;
+    left: 0;
+    transition: 0.3s;
+}
+
+.skills-icon-wrapper > * {
+    aspect-ratio: 4 / 3;
+}
+
+.skills-icon-wrapper > div > img{
+    width: 80%;
+    object-fit: cover;
+    display: block;
 }

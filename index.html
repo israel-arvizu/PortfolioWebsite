@@ -147,7 +147,7 @@
                 </div>
             </div>
         </section>
-        <section id="main-section-5">
+        <!-- <section id="main-section-5">
             <div class="work-sect-wrapper">
                 <h2>Employment🖊️</h2>
                     <grid>
@@ -162,30 +162,119 @@
                             <img src="/images/Swifty Gadgets LLC Updated LOGO white.jpg">
                             <div class="work-text-cont">
                                 <h4>Swifty Gadgets LLC</h4>
-                                <p>Teller</p>
+                                <p>Business Owner</p>
                             </div>
                         </div>
                         <div>
                             <img src="/images/Target_Bullseye-Logo_Red_transparent.png">
                             <div class="work-text-cont">
                                 <h4>Target Co.</h4>
-                                <p>Teller</p>
+                                <p>Fufillment Expert</p>
                             </div>
                         </div>
                         <div>
                             <img src="/images/macys.png">
                             <div class="work-text-cont">
                                 <h4>Macy's Co.</h4>
-                                <p>Teller</p>
+                                <p>Sale's Specialist</p>
                             </div>
                         </div>
                     </grid>
             </div>
+        </section> -->
+        <section id="main-section-5">
+            <div class="skills-sect-wrapper">
+                <h2>Technical Skills 🔧</h2>
+                <div class="skills-icon-container">
+                    <div class="skills-icon-wrapper">
+                        <div>
+                            <img src="/images//jsicon.png">
+                        </div>
+                        <div>
+                            <img src="/images/pythonicon.png">
+                        </div>
+                        <div>
+                            <img src="/images/cplusplusicon.png">
+                        </div>
+                        <div>
+                            <img src="/images/html5icon.png">
+                        </div>
+                        <div>
+                            <img src="/images/css3icon.png">
+                        </div>
+                        <div>
+                            <img src="/images/sqlicon.png">
+                        </div>
+                        <div>
+                            <img src="/images/postgreicon.png">
+                        </div>
+                        <div>
+                            <img src="/images/flaskicon.png">
+                        </div>
+                        <div>
+                            <img src="/images/dockericon.png">
+                        </div>
+                        <div>
+                            <img src="/images/nodejs.png">
+                        </div>
+                        <div>
+                            <img src="/images/sequelizeicon.png">
+                        </div>
+                        <div>
+                            <img src="/images/reduxicon.png">
+                        </div>
+                        <div>
+                            <img src="/images/expressicon.png">
+                        </div>
+                        <div>
+                            <img src="/images/awsicon.png">
+                        </div>
+                        <div>
+                            <img src="/images/herokuicon.png">
+                        </div>
+                        <div>
+                            <img src="/images/giticon.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="main-section-6">
+            //RESUME SECTION
         </section>
     </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        const imageWrapper = document.querySelector('.skills-icon-wrapper');
+        const imageItems = document.querySelectorAll('.skills-icon-wrapper > *');
+        const imageLength = imageItems.length;
+        const perView = 7;
+        let totalScroll = 0;
+        const delay = 1500;
+
+        imageWrapper.style.setProperty('--per-view', perView)
+        for(let i = 0; i < perView; i++){
+            imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML);
+        }
+
+        let autoScroll = setInterval(scrolling, delay)
+
+        function scrolling(){
+            totalScroll++
+            if(totalScroll === imageLength + 1){
+                clearInterval(autoScroll)
+                totalScroll = 1
+                imageWrapper.style.transition = '0s'
+                imageWrapper.style.left = '0';
+                autoScroll = setInterval(scrolling, 1000)
+            }
+            const widthEl = document.querySelector('.skills-icon-wrapper > :first-child').offsetWidth + 50;
+            imageWrapper.style.left = `-${totalScroll * widthEl}px`
+            imageWrapper.style.transition = '.3s'
+        }
     </script>
 </body>
 </html>
