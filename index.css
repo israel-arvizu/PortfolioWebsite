@@ -524,6 +524,8 @@ grid > div > img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 15rem;
+    padding-bottom: 3rem;
 }
 
 #top-footer-container{
@@ -547,4 +549,42 @@ grid > div > img{
     height: fit-content;
     padding: 10px 25px;
     border-radius: 20px;
+}
+
+#bottom-footer-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom-footer-container > a {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#bottom-footer-container > a > span{
+    color: var(--mainOrange);
+}
+
+#bottom-footer-container > div > a{
+    margin: 5px 10px;
+    color: var(--textGray);
+    border-bottom: 2px solid rgb(202, 201, 201);
+}
+
+#bottom-footer-container > div > a:hover{
+    color: var(--professionalGray);
+    border-bottom: 2px solid var(--mainOrange);
+    cursor: pointer;
+}
+
+#bottom-footer-container > p{
+    text-align: center;
+    color: var(--textGray);
 }
