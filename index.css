@@ -37,7 +37,7 @@ nav{
 }
 
 #left-logo-sect > a > span{
-    color: #bb6d00;
+    color: var(--mainOrange);
 }
 
 #right-nav-buttons-cont > a{
@@ -45,12 +45,13 @@ nav{
     margin-right: 10px;
     padding-bottom: 5px;
     color: #808080;
+    text-decoration: none;
     /* transition: border 2s ease-in; */
 }
 
 #right-nav-buttons-cont > a:hover{
     color: black;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid var(--mainOrange);
     cursor: pointer;
 }
 
@@ -71,13 +72,17 @@ nav{
 .main-header-text{
     margin-left: 5%;
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    margin-bottom: 15px;
+    margin: 5% 10px 5% 5%;
 }
 
 .main-header-text > h1:first-child{
     font-size: 20vh;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0px;
+}
+
+.main-header-text > h1:first-child > span{
+    font-size: 17vh;
 }
 
 .main-header-text > h1:last-child{
@@ -105,7 +110,7 @@ nav{
     align-items: flex-end;
 }
 
-.main-center-div > button{
+.next-sect-btn{
     background-color: transparent;
     background-color: white;
     border-radius: 25px;
@@ -116,20 +121,12 @@ nav{
     font-size: 15px;
     border-color: var(--mainOrange);
     color: var(--mainOrange);
-}
-
-.main-center-div > button > a{
     text-decoration: none;
-    color: var(--mainOrange);
-    width: max-content;
 }
 
-.main-center-div > button > a:hover{
+.next-sect-btn:hover{
     text-decoration: none;
     color: white;
-}
-
-.main-center-div > button:hover{
     cursor: pointer;
     color: white;
     background-color: var(--mainOrange);
@@ -140,17 +137,24 @@ nav{
 .main-wrapper{
     width: 100%;
     height: 100vh;
+}
+
+.container-section-2{
+    width: 100%;
+    height: 90vh;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.main-wrapper.sect-2 > div{
+.container-section-2 > div{
     width: 50%;
-    height: 100vh;
+    height: 90vh;
 }
 
-.main-wrapper.sect-2 > div:first-child{
+
+.container-section-2 > div:first-child{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,14 +163,14 @@ nav{
     font-family: var(--europaFont)
 }
 
-.main-wrapper.sect-2 > div:last-child{
+.container-section-2 > div:last-child{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.main-wrapper.sect-2 > div > h2{
+.container-section-2 > div > h2{
     width: 100%;
     max-width: 700px;
     font-size: 45px;
@@ -174,7 +178,7 @@ nav{
     color: var(--professionalGray);
 }
 
-.main-wrapper.sect-2 > div > h2 > span{
+.container-section-2 > div > h2 > span{
     color: var(--mainOrange);
 }
 
@@ -223,6 +227,14 @@ nav{
     height: 350px;
     max-width: 600px;
     max-height: 600px;
+}
+
+.center-btn-wrapper{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 /* PROJECT SECTION  */
@@ -294,6 +306,8 @@ article > div >  a > img{
 .project-container > div:last-child > p{
     font-size: 18px;
 }
+
+/* --------------PROJECT SECTION BUTTONS--------------- */
 
 .prj-btn-container{
     margin-top: 15px;
