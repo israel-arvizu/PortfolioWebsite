@@ -690,3 +690,30 @@ grid > div > img{
     text-align: center;
     color: var(--textGray);
 }
+
+/* ----------SCREEN SIZES BIGGER THAN 1460PX ------------------*/
+
+@media screen and (max-width: 1460px) {
+    .first-pic-about.top-pic{
+        width: 150px;
+        margin-right: 300px;
+        margin-bottom: -175px;
+        max-width: 175px;
+        max-height: 175px;
+        z-index: 1;
+    }
+
+    .first-pic-about.mid-pic{
+        margin-bottom: -125px;
+        margin-left: 300px;
+        width: 175px;
+        z-index: 1;
+    }
+
+    .first-pic-about.bottom-pic{
+        width: 260px;
+        height: 260px;
+        max-width: 600px;
+        max-height: 600px;
+    }
+}
