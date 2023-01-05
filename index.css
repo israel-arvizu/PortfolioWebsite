@@ -816,4 +816,90 @@ grid > div > img{
 
 @media screen and (max-width: 950px) {
 
+    /* LANDING TEXT */
+
+    .main-header-text > h1:first-child{
+        font-size: 17vh;
+    }
+
+    .main-header-text > h1:first-child > span{
+        font-size: 13vh;
+    }
+
+    .main-header-text > h1:last-child{
+        font-size: 10vh;
+    }
+
+    #subtext-landing{
+        margin-top: 50px;
+        font-size: 1.2em;
+    }
+
+    /* PROJECTS  */
+
+    .project-container{
+        margin: 50px 0px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    article > div{
+        width: 95%;
+    }
+
+    article > div > a{
+        display: block;
+        max-width: 600px;
+        min-width: 250px;
+    }
+
+    article > div >  a > img{
+        display: block;
+        max-width: 600px;
+        min-width: 250px;
+    }
+
+    .project-container > div:last-child > p, h3, h4{
+        width: 95%;
+        max-width: 600px;
+    }
+
+    .project-container > div:last-child{
+        margin-bottom: 25px;
+    }
+
+    /* EDUCATION */
+
+    #education-item-list > div{
+        width: 40%;
+    }
+
+    .edu-info-text{
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .edu-info-text > h3{
+        white-space: nowrap;
+        margin: 0px;
+    }
+
+    .edu-info-text > p{
+        margin-top: 5px;
+    }
+
+    /* FOOTER SECTION */
+
+    #top-footer-container{
+        width: 80%;
+        background-color: #fcb757;
+        margin-top: -50px;
+        padding: 5px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
