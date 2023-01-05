@@ -601,6 +601,8 @@ grid > div > img{
 }
 
 #top-footer-container{
+    width: 80%;
+    max-width: 980px;
     background-color: #fcb757;
     margin-top: -50px;
     padding: 20px;
@@ -891,15 +893,8 @@ grid > div > img{
 
     /* FOOTER SECTION */
 
-    #top-footer-container{
-        width: 80%;
-        background-color: #fcb757;
-        margin-top: -50px;
-        padding: 5px;
-        border-radius: 25px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+    #top-footer-container > p{
+
     }
+
 }
