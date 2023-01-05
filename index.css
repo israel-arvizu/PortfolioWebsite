@@ -804,4 +804,16 @@ grid > div > img{
         height: 5vh;
     }
 
+    .project-sect-wrapper > article{
+        width: 95%;
+    }
+
+    #education-item-list{
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+
 }
