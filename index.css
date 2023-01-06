@@ -984,6 +984,16 @@ grid > div > img{
 
     /* EDUCATION */
 
+    .education-sect-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        margin: 0px 0px;
+    }
+
     #education-item-list{
         display: flex;
         flex-direction: column;
@@ -994,6 +1004,10 @@ grid > div > img{
     #education-item-list > div{
         width: 60%;
         margin: 20px 10px;
+    }
+
+    .scroll-down-sects{
+
     }
 
 
@@ -1020,6 +1034,11 @@ grid > div > img{
 
 
 @media screen and (max-width: 530px) {
+
+    .main-header-title{
+        font-size: 10vw;
+    }
+
     .container-section-2 > div > h2{
         font-size: 35px;
     }
@@ -1046,4 +1065,33 @@ grid > div > img{
     }
 
 
+}
+
+@media screen and (max-width: 460px) {
+
+    /* EDUCATION SECTION */
+
+    #education-item-list > div{
+        width: 80%;
+        margin: 20px 10px;
+    }
+
+     /* ICON SECTION */
+     .skills-icon-container{
+        width: 100%;
+        max-width: 460px;
+    }
+
+    .skills-icon-wrapper{
+        grid-auto-columns: 61px;
+        grid-gap: 52px;
+    }
+
+    .skills-icon-wrapper > * {
+        aspect-ratio: 1 / 1;
+    }
+
+    .skills-icon-wrapper > div > img{
+        width: 100%;
+    }
 }
