@@ -118,6 +118,8 @@ nav{
     border-color: var(--mainOrange);
     color: var(--mainOrange);
     text-decoration: none;
+    transition: 1s background-color ease-out;
+    transition: 1s color ease-out;
 }
 
 .next-sect-btn:hover{
@@ -1001,11 +1003,13 @@ grid > div > img{
     }
 
     .bottom-arrow-prj{
+        color: var(--professionalGray);
         display: block;
         margin-top: 80px;
     }
 
     .bottom-arrow-sect{
+        color: var(--professionalGray);
         display: block;
         position:relative;
         top: 80vh;
