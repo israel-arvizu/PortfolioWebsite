@@ -431,6 +431,15 @@ article > div >  a > img{
     border-radius: 25px 100px;
 }
 
+.bottom-arrow-sect{
+    display: none;
+}
+
+.bottom-arrow-prj{
+    display: none;
+}
+
+
 /* EDUCATION SECTION */
 
 .education-sect-wrapper{
@@ -990,7 +999,7 @@ grid > div > img{
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         margin: 0px 0px;
     }
 
@@ -1006,12 +1015,24 @@ grid > div > img{
         margin: 20px 10px;
     }
 
-    .scroll-down-sects{
+    .bottom-arrow-prj{
+        display: block;
+        margin-top: 80px;
+    }
 
+    .bottom-arrow-sect{
+        display: block;
+        position:relative;
+        top: 80vh;
     }
 
 
     /* ICON SECTION */
+
+    .skills-sect-wrapper{
+        margin-top: 40vh;
+    }
+
     .skills-icon-container{
         margin-top: 20px;
         max-width: 450px;
@@ -1069,6 +1090,18 @@ grid > div > img{
 
 @media screen and (max-width: 460px) {
 
+    /* NAV BAR */
+
+    nav{
+        padding: 4% 3%;
+    }
+
+    #right-nav-buttons-cont > a{
+        font-size: 15px;
+        margin-left: 5px;
+        margin-right: 0px;
+    }
+
     /* EDUCATION SECTION */
 
     #education-item-list > div{
@@ -1077,13 +1110,13 @@ grid > div > img{
     }
 
      /* ICON SECTION */
-     .skills-icon-container{
+    .skills-icon-container{
         width: 100%;
         max-width: 460px;
     }
 
     .skills-icon-wrapper{
-        grid-auto-columns: 61px;
+        grid-auto-columns: 81px;
         grid-gap: 52px;
     }
 
@@ -1094,4 +1127,37 @@ grid > div > img{
     .skills-icon-wrapper > div > img{
         width: 100%;
     }
+
+    /* FOOTER SECTION */
+
+    #bottom-footer-container > div > a{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    /* ABOUT */
+
+    .main-paragraph-styles{
+        font-size: 15px;
+    }
+
+    .first-pic-about.top-pic{
+        width: 80px;
+        height: 80px;
+        margin-right: 230px;
+        margin-bottom: -120px;
+    }
+
+    .first-pic-about.mid-pic{
+        margin-left: 240px;
+        width: 100px;
+    }
+
+    .first-pic-about.bottom-pic{
+        width: 160px;
+        height: 160px;
+    }
+
 }
