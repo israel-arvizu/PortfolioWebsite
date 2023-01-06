@@ -250,10 +250,11 @@ nav{
 
 }
 
-.project-sect-wrapper > h2{
+.main-header-title{
     margin: 25px 0px;
     font-size: 55px;
     text-align: center;
+    color: var(--professionalGray);
 }
 
 .project-sect-wrapper > article{
@@ -438,12 +439,6 @@ article > div >  a > img{
     margin: 150px 0px;
 }
 
-.education-sect-wrapper > h2{
-    font-size: 55px;
-    text-align: center;
-    color: var(--professionalGray);
-}
-
 #education-item-list{
     margin-top: 30px;
     display: flex;
@@ -493,12 +488,6 @@ article > div >  a > img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.work-sect-wrapper > h2{
-    font-size: 55px;
-    text-align: center;
-    color: var(--professionalGray);
 }
 
 grid{
@@ -553,12 +542,6 @@ grid > div > img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.skills-sect-wrapper > h2{
-    font-size: 55px;
-    text-align: center;
-    color: var(--professionalGray);
 }
 
 .skills-icon-container{
@@ -896,5 +879,171 @@ grid > div > img{
     #top-footer-container > p{
 
     }
+
+}
+
+@media screen and (max-width: 725px) {
+
+    /* LANDING TEXT */
+
+    #main-landing-section-1{
+        justify-content: center;
+    }
+
+    .main-header-text > h1:first-child{
+        font-size: 15vh;
+    }
+
+    .main-header-text > h1:first-child > span{
+        font-size: 13vh;
+    }
+
+    .main-header-text > h1:last-child{
+        font-size: 8vh;
+    }
+
+    #subtext-landing{
+        width: 75%;
+        margin-top: 50px;
+        font-size: 1.2em;
+    }
+
+    /* ICON SECTION */
+    .skills-icon-container{
+        max-width: 450px;
+    }
+
+    /* FOOTER SECTION */
+
+    #top-footer-container > p{
+        display: none;
+    }
+
+    #bottom-footer-container > p{
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 579px) {
+
+    /* ABOUT ME PIC COLLAGE */
+
+    .first-pic-about.top-pic{
+        width: 100px;
+        height: 100px;
+    }
+
+    .first-pic-about.mid-pic{
+        width: 135px;
+    }
+
+    .first-pic-about.bottom-pic{
+        width: 220px;
+        height: 220px;
+    }
+
+    /* LANDING TEXT */
+
+    .main-header-text > h1:first-child{
+        display: flex;
+        justify-content: center;
+        font-size: 20vw;
+    }
+
+    .main-header-text > h1:first-child > span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12vw;
+    }
+
+    .main-header-text > h1:last-child{
+        display: flex;
+        justify-content: center;
+        font-size: 10vw;
+    }
+
+    #subtext-landing{
+        margin: 15px 15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        font-size: 1.1em;
+    }
+
+    #subtext-landing > p{
+        width: 85%;
+        margin: 0px;
+    }
+
+    .main-header-title{
+        font-size: 9vw;
+    }
+
+    /* EDUCATION */
+
+    #education-item-list{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+
+    #education-item-list > div{
+        width: 60%;
+        margin: 20px 10px;
+    }
+
+
+    /* ICON SECTION */
+    .skills-icon-container{
+        margin-top: 20px;
+        max-width: 450px;
+    }
+
+    .skills-icon-wrapper{
+        grid-auto-columns: 61px;
+        grid-gap: 52px;
+    }
+
+    .skills-icon-wrapper > * {
+        aspect-ratio: 1 / 1;
+    }
+
+    .skills-icon-wrapper > div > img{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 530px) {
+    .container-section-2 > div > h2{
+        font-size: 35px;
+    }
+
+    .main-paragraph-styles{
+        font-size: 16px;
+    }
+
+    .first-pic-about.top-pic{
+        width: 80px;
+        height: 80px;
+        margin-right: 230px;
+        margin-bottom: -120px;
+    }
+
+    .first-pic-about.mid-pic{
+        margin-left: 260px;
+        width: 115px;
+    }
+
+    .first-pic-about.bottom-pic{
+        width: 180px;
+        height: 180px;
+    }
+
 
 }
